@@ -1,11 +1,11 @@
 import { Routes, Route, BrowserRouter } from 'react-router-dom'
-import { ToDo } from './pages/todo/todo-page'
+import { User } from './pages/user/user'
 
 export const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<ToDo />} exact />
+        <Route path="/" element={<User />} exact />
       </Routes>
     </BrowserRouter>
   )
