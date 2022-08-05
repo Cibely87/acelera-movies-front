@@ -8,9 +8,12 @@ export const User = () => {
 
   return (
     <>
-      <Input label="Login" type="text" placeholder='Escreva seu nome' />
-      <Input label="Password" type="text" placeholder='Digite sua senha' />
-      <Button onClick={handlerClick} type='button'>Entrar</Button>
+      <form>
+        <Input label="Login" type="text" placeholder='Escreva seu nome' /> <br />
+        <Input label="Password" type="text" placeholder='Digite sua senha' />  <br />
+        <a href="#">Esqueceu sua senha</a> <br />
+        <Button onClick={handlerClick} type='button'>Entrar</Button> <br />
+      </form>
     </>
   )
 }
