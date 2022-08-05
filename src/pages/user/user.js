@@ -1,17 +1,18 @@
 import { Input } from '../../components/input'
 import { Button } from '../../components/button'
+import './user.css'
 
 export const User = () => {
   const userEmail = (email) => console.log(email)
 
   return (
-    <>
+    <div>
       <form>
-        <Input label="Login" type="email" placeholder='Digite seu login' /> <br />
-        <Input label="Password" type="text" placeholder='Digite sua senha' />  <br />
-        <a href="#">Esqueceu sua senha</a> <br />
-        <Button onClick={userEmail} type='button'>Entrar</Button> <br />
+        <Input label="Login" type="email" placeholder='Digite seu login' />
+        <Input label="Password" type="text" placeholder='Digite sua senha' />
+        <a href="#">Esqueceu sua senha</a>
+        <Button onClick={userEmail} type='button' text='Entrar' />
       </form>
-    </>
+    </div>
   )
 }

@@ -1,3 +1,4 @@
+import './input.css'
 
 export const Input = ({ label, type, placeholder = '', onChange, name }) => {
   return (
