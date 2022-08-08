@@ -4,15 +4,15 @@ form {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 80%;
-  height: 80%;
+  width: 25%;
+  height: 55%;
   border: 1px solid;
-  border-color: 1px gray;
-  background-color: #FFFBE6;
+  border-color: 1px #99AAFF;
+  background-color: #E6FFFF;
 }
 
 a {
   margin-top: 10px;
   margin-bottom: 15px;
-  color: #FF00AA;
+  color: #3355FF;
 }
