@@ -6,7 +6,7 @@ export const User = () => {
   const userEmail = (email) => console.log(email)
 
   return (
-    <div>
+    <div className='container'>
       <form>
         <Input label="Login" type="email" placeholder='Digite seu login' />
         <Input label="Password" type="text" placeholder='Digite sua senha' />

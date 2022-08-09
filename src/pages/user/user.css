@@ -16,3 +16,13 @@ a {
   margin-bottom: 15px;
   color: #3355FF;
 }
+
+.container {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+}
