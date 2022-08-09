@@ -4,7 +4,8 @@ import './home.css'
 export const Home = () => {
   return (
     <div className='homePage'>
-      <h1>All Movies</h1>
+      <h2>Hello, user! Welcome!</h2>
+      <img src="https://br.web.img3.acsta.net/pictures/210/123/21012312_20130613132958221.jpg" />
     </div>
   )
 }
