@@ -1,5 +1,12 @@
+import { useParams } from 'react-router'
+
 export const Movie = () => {
+  const { id } = useParams()
+
   return (
-    <>Movie</>
+    <>
+      <h1>Página Movie</h1>
+      <p>Você esta no filme com id: {id}</p>
+    </>
   )
 }

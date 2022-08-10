@@ -3,6 +3,7 @@ import { Button } from '../../components/button'
 import './user.css'
 import { useState } from 'react'
 import { client } from '../../service/client'
+import { Link } from 'react-router-dom'
 
 export const User = () => {
   /* const userEmail = (email) => console.log(email)
@@ -32,6 +33,7 @@ export const User = () => {
         <Input label="Password" type="text" placeholder='Digite sua senha' onChange={handlerPassword} />
         <a href="#">Esqueceu sua senha</a>
         <Button onClick={handlerClick} type='button' text='Entrar' />
+        <Link to='/home' />
       </form>
     </div>
   )
