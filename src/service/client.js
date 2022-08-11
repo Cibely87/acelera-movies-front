@@ -1,15 +1,5 @@
 import axios from 'axios'
-import env from 'react-dotenv'
-
-const getURLBackend = () => {
-  if (env) {
-    const { URL_BACKEND } = env
-    localStorage.setItem('service', URL_BACKEND)
-    return URL_BACKEND
-  }
-  return 'http://localhost:9000'
-}
 
 export const client = axios.create({
-  baseURL: getURLBackend()
+  baseURL: 'http://localhost:9000'
 })
