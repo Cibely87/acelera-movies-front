@@ -6,7 +6,7 @@ export const Movie = () => {
   return (
     <>
       <h1>Página Movie</h1>
-      <p>Você esta no filme com título: {id}</p>
+      <h3>Você esta no filme com título: {id}</h3>
     </>
   )
 }

@@ -1,0 +1,40 @@
+.modal-background{
+  background-color: bisque;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  overflow: auto;
+}
+
+.modal {
+  border: 1px solid black;
+  background-color: white;
+  padding: 10px;
+  border-radius: 3px;
+  margin: 0 auto;
+  max-width: 500px;
+  -webkit-box-shadow: 2px 4px 18px 3px rgba(0,0,0,0.89); 
+box-shadow: 2px 4px 18px 3px rgba(0,0,0,0.89);
+}
+
+.modal h3, .modal p {
+  margin: 0;
+}
+
+.modal header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  border: 1px solid;
+  border-radius: 3px;
+  background-color: rgba(61, 123, 255, 0.89);
+  color: white;
+}
+
+.closer {
+  background-color: transparent;
+}
