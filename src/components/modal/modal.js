@@ -1,20 +1,28 @@
 import './modal.css'
+import { useState } from 'react'
 
-export const Modal = () => {
+export const Modal = ({ children }) => {
+  const [toggle, setToggle] = useState(false)
+  const handleClick = () => {
+    setToggle(toggle => !toggle)
+  }
+
   return (
-    <div className="modal-container">
-      <button>Create movie</button>
+    <>
+      <button onClick={handleClick}>Create movie</button>
 
-      <div className='modal-background'>
-        <div className="modal">
-          <header>
-            <h3>Title</h3>
-            <button className='closer'>X</button>
-          </header>
-          <p>Itens da modal</p>
+      {toggle && (
+        <div className="modal-container">
+          <div className="modal">
+            <header>
+              <h3>Title</h3>
+              <button onClick={handleClick} className='closer'>X</button>
+            </header>
+            {children}
+          </div>
         </div>
-      </div>
+      )}
 
-    </div>
+    </>
   )
 }
