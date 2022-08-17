@@ -19,7 +19,8 @@ box-shadow: 2px 4px 18px 3px rgba(0,0,0,0.89);
   border: 1px solid;
   border-radius: 3px;
   background-color: rgba(188, 25, 252, 0.89);
-  color: rgb(255, 218, 218);
+  color: rgb(255, 255, 255);
+  padding-left: 10px;
 }
 
 .closer {
@@ -48,4 +49,6 @@ box-shadow: 2px 4px 18px 3px rgba(0,0,0,0.89);
   font-size: 15px;
   width: 15%;
   margin-top: 20px;
+  align-items: center;
+  padding-left: 10px;
 }

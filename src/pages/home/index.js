@@ -24,7 +24,7 @@ export const Home = () => {
       <aside>
         <Modal
           label="New Movie"
-          title="Add Movie">
+          title="A new movie">
           <Formulario />
         </Modal>
       </aside>

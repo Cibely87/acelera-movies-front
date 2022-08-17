@@ -9,9 +9,9 @@ export const Formulario = () => {
           <Input type="text" placeholder="title" label="Title movie" />
           <Input type="text" placeholder="subtitle" label="Subtitle" />
         </div>
-        <textarea type="text" placeholder="resume" label="Resume" />
+        <textarea rows="10" cols="62" type="text" placeholder="resume" label="Resume" />
         <div className='titleClass'>
-          <Input type="text" placeholder="dd/mm/yyyy" label="Realese Date" />
+          <Input type="text" placeholder="mm/dd/yyyy" label="Realese Date" />
           <Input type="text" placeholder="image" label="Image" />
         </div>
         <div className='titleClass'>

@@ -1,4 +1,5 @@
 import { useParams } from 'react-router'
+import './movie.css'
 import { Formulario } from '../../components/form'
 import { Modal } from '../../components/modal/modal'
 
@@ -10,13 +11,13 @@ export const Movie = () => {
       <fontAwesomeIcon icon="Edit">
         <Modal
           label="Edit movie"
-          title="edit">
+          title="Editing">
           <Formulario>
           </Formulario>
         </Modal>
       </fontAwesomeIcon>
-      <h1>Página Movie</h1>
-      <h3>Você esta no filme com título: {id}</h3>
+      <h1 className='moviePage'>Movie</h1>
+      <h3 className='h3Movie'>You are in the movie with title: {id}</h3>
     </>
   )
 }
