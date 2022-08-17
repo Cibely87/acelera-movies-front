@@ -10,7 +10,7 @@ export const Modal = ({ children, label, title }) => {
 
   return (
     <>
-      <button onClick={handleClick}>{label}</button>
+      <button className='buttonModal' onClick={handleClick}>{label}</button>
 
       {toggle && (
         <div className="modal">
