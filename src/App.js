@@ -7,7 +7,7 @@ export const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/login" element={<User />} exact />
+        <Route path="/" element={<User />} exact />
         <Route path="/home" element={<Home />} exact />
         <Route path='/movie/:id' element={<Movie />} />
       </Routes>

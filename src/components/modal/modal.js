@@ -13,14 +13,12 @@ export const Modal = ({ children, label, title }) => {
       <button onClick={handleClick}>{label}</button>
 
       {toggle && (
-        <div className="modal-container">
-          <div className="modal">
-            <header>
-              <h3>{title}</h3>
-              <button onClick={handleClick} className='closer'>X</button>
-            </header>
-            {children}
-          </div>
+        <div className="modal">
+          <header>
+            <h3>{title}</h3>
+            <button onClick={handleClick} className='closer'>X</button>
+          </header>
+          {children}
         </div>
       )}
 

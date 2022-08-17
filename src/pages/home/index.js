@@ -2,6 +2,8 @@ import './home.css'
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { client } from '../../service/client'
+import { Formulario } from '../../components/form'
+import { Modal } from '../../components/modal/modal'
 
 export const Home = () => {
   const [itens, setItems] = useState([])
@@ -19,6 +21,13 @@ export const Home = () => {
       <div className='homePage'>
         <h1>Hello, user! Welcome!</h1>
       </div>
+      <aside>
+        <Modal
+          label="New Movie"
+          title="Add Movie">
+          <Formulario />
+        </Modal>
+      </aside>
       <ul>
         {itens.map(item => (
           <li key={item.id}>

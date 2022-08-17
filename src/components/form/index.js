@@ -1,19 +1,37 @@
 import { Input } from '../input'
+import './form.css'
 
 export const Formulario = () => {
   return (
-    <form>
-      <Input type="text" placeholder="title" label="Title movie" />
-      <Input type="text" placeholder="subtitle" label="Subtitle" />
-      <Input type="text" placeholder="resume" label="Resume" />
-      <Input type="text" placeholder="date" label="Realese Date" />
-      <Input type="text" placeholder="image" label="Image" />
-      <Input type="text" placeholder="director" label="Director" />
-      <Input type="text" placeholder="writer" label="Writer" />
-      <Input type="text" placeholder="classification" label="Classification" />
-      <Input type="text" placeholder="studio" label="Studio" />
-      <Input type="text" placeholder="star" label="Star" />
-      <button>Create Movie</button>
-    </form>
+    <div className='formModal'>
+      <form>
+        <div className='titleClass'>
+          <Input type="text" placeholder="title" label="Title movie" />
+          <Input type="text" placeholder="subtitle" label="Subtitle" />
+        </div>
+        <textarea type="text" placeholder="resume" label="Resume" />
+        <div className='titleClass'>
+          <Input type="text" placeholder="dd/mm/yyyy" label="Realese Date" />
+          <Input type="text" placeholder="image" label="Image" />
+        </div>
+        <div className='titleClass'>
+          <Input type="text" placeholder="director" label="Director" />
+          <Input type="text" placeholder="writer" label="Writer" />
+        </div>
+        <div className='titleClass'>
+          <Input type="text" placeholder="classification" label="Classification" />
+          <Input type="text" placeholder="studio" label="Studio" />
+        </div>
+        <div className='titleClass'>
+          <Input type="number" placeholder="note" label="Star" />
+          <Input type="text" placeholder="actor" label="Actor" />
+        </div>
+        <div className='titleClass'>
+          <Input type="text" placeholder="awards" label="Awards" />
+          <Input type="text" placeholder="gender" label="Gender" />
+        </div>
+        <button>Create Movie</button>
+      </form>
+    </div >
   )
 }

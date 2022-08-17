@@ -1,15 +1,17 @@
+.inputHome {
+  display: block;
+}
+
 input {
-  display:flex;
-  justify-content: center;
-  align-items: center;
   border: 1px solid #ababab;
   border-radius: 4px;
   padding: 10px 30px;
-  margin: 6px 6px;
+  margin: 6px 0;
 }
 
 label {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-style: normal;
   font-size: 17px;
+  display: block;
 }

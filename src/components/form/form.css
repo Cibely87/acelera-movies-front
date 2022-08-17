@@ -1,0 +1,9 @@
+.formModal {
+  display: flex;
+  flex-direction: column;
+}
+
+.titleClass {
+  display: flex;
+  justify-content: space-between;
+}

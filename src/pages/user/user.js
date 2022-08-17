@@ -26,7 +26,7 @@ export const User = () => {
 
   return (
     <div className='container'>
-      <form>
+      <form className='formUser'>
         <Input label="Login" type="email" placeholder='Digite seu login' onChange={handlerEmail} />
         <Input label="Password" type="text" placeholder='Digite sua senha' onChange={handlerPassword} />
         <a href="#">Esqueceu sua senha</a>
