@@ -19,7 +19,7 @@ export const Home = () => {
   return (
     <>
       <div className='homePage'>
-        <h1>Hello! Welcome, choose a movie!</h1>
+        <h1 className='titleHome'>Hello! Welcome, choose a movie!</h1>
       </div>
       <aside>
         <Modal

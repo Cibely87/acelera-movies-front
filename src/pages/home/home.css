@@ -1,23 +1,28 @@
 
-h1 {
+.titleHome {
   color: rgb(22, 21, 21);
   text-align: justify;
-  padding: 20px;
+  padding: 40px;
   width: 100%;
-  display: flex;
-  margin-top: 20px;
-  font-size: 30px;
-  background-color: rgb(220, 79, 255);
-  align-items: center;
+  margin-top: 10px;
+  font-size: 40px;
+  background-color: rgb(205, 203, 206);
+  text-align: center;
 }
 
 h2 {
-  color: #fdfdfd;
+  color: #6f25f8;
   text-align: justify;
-  padding: 20px;
-  width: 30%;
+  padding: 15px;
+  width: 100%;
   margin-top: 10px;
-  font-size: 20px;
-  background-color: rgb(89, 78, 241);
-  margin-top: 20px;
+  font-size: 22px;
+  background-color: rgb(250, 248, 118);
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-align: center;
+  }
+
+  li {
+    display: grid;
   }
