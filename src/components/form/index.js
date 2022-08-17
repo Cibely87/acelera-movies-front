@@ -30,7 +30,7 @@ export const Formulario = () => {
           <Input type="text" placeholder="awards" label="Awards" />
           <Input type="text" placeholder="gender" label="Gender" />
         </div>
-        <button>Create Movie</button>
+        <button className='buttonCreate'>Create Movie</button>
       </form>
     </div >
   )

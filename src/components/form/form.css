@@ -7,3 +7,14 @@
   display: flex;
   justify-content: space-between;
 }
+
+.buttonCreate {
+  background-color: #2efdc9;
+  color: #696666;
+  border: 1px solid;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 105%;
+  width: 100%;
+  text-align: center;
+}

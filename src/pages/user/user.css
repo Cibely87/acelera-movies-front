@@ -1,10 +1,15 @@
 .formUser {
   border: 1px solid;
-  border-color: 1px #99AAFF;
-  background-color: #E6FFFF;
+  border-color: 1px #dddddd;
+  border-radius: 4px;
+  background-color: #e9e9e9;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 a {
@@ -22,4 +27,15 @@ a {
   height: 100%;
   flex-direction: column;
   align-items: center;
+}
+
+.buttonUser {
+  background-color: #d9e5ff;
+  color: #4c38fd;
+  border: 1px solid;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 85%;
+  width: 95%;
+  text-align: center;
 }

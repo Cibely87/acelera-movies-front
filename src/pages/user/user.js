@@ -27,10 +27,10 @@ export const User = () => {
   return (
     <div className='container'>
       <form className='formUser'>
-        <Input label="Login" type="email" placeholder='Digite seu login' onChange={handlerEmail} />
-        <Input label="Password" type="text" placeholder='Digite sua senha' onChange={handlerPassword} />
-        <a href="#">Esqueceu sua senha</a>
-        <Button onClick={handlerClick} type='button' text='Entrar' />
+        <Input label="Login" type="email" placeholder='Enter your login' onChange={handlerEmail} />
+        <Input label="Password" type="text" placeholder='Type your password' onChange={handlerPassword} />
+        <a href="#">Recover your password</a>
+        <Button classname="buttonUser" onClick={handlerClick} type='button' text='log in' />
       </form>
     </div>
   )
