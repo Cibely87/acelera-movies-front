@@ -19,7 +19,7 @@ export const Home = () => {
   return (
     <>
       <div className='homePage'>
-        <h1>Hello, user! Welcome!</h1>
+        <h1>Hello! Welcome, choose a movie!</h1>
       </div>
       <aside>
         <Modal
@@ -31,9 +31,9 @@ export const Home = () => {
       <ul>
         {itens.map(item => (
           <li key={item.id}>
-            <img src={item.image} />
-            <h2>{item.title}</h2>
             <Link to={`/movie/${item.id}`}>
+              <h2>{item.title}</h2>
+              <img src={item.image} />
             </Link>
           </li>
         )
