@@ -1,24 +1,27 @@
+.homePage {
+  background-color: rgb(168, 168, 170);
+}
 
 .titleHome {
   color: rgb(22, 21, 21);
-  text-align: justify;
   padding: 40px;
   width: 100%;
   margin-top: 10px;
   font-size: 40px;
-  background-color: rgb(205, 203, 206);
+  background-color: rgb(170, 168, 168);
   text-align: center;
+  align-items: center;
 }
 
 h2 {
-  color: #6f25f8;
+  color: #0c08f7;
   text-align: justify;
   padding: 15px;
   width: 100%;
   margin-top: 10px;
-  font-size: 22px;
-  background-color: rgb(250, 248, 118);
-  margin-top: 10px;
+  font-size: 30px;
+  background-color: rgb(170, 168, 168);
+  margin-top: 5px;
   margin-bottom: 5px;
   text-align: center;
   }

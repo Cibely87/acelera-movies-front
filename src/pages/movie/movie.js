@@ -7,7 +7,7 @@ export const Movie = () => {
   const { id } = useParams()
 
   return (
-    <>
+    <div className='pageMovie'>
       <fontAwesomeIcon icon="Edit">
         <Modal
           label="Edit movie"
@@ -17,7 +17,7 @@ export const Movie = () => {
         </Modal>
       </fontAwesomeIcon>
       <h1 className='moviePage'>Movie</h1>
-      <h3 className='h3Movie'>You are in the movie with title: {id}</h3>
-    </>
+      <h3 className='h3Movie'>You choose the movie: {id}</h3>
+    </div>
   )
 }

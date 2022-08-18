@@ -20,25 +20,26 @@ export const Home = () => {
     <>
       <div className='homePage'>
         <h1 className='titleHome'>Hello! Welcome, choose a movie!</h1>
+        <aside>
+          <Modal
+            label="New Movie"
+            title="A new movie">
+            <Formulario />
+          </Modal>
+        </aside>
+        <ul>
+          {itens.map(item => (
+            <li key={item.id}>
+              <Link to={`/movie/${item.id}`}>
+                <h2>{item.title}</h2>
+                <img src={item.image} />
+              </Link>
+            </li>
+          )
+          )}
+        </ul>
       </div>
-      <aside>
-        <Modal
-          label="New Movie"
-          title="A new movie">
-          <Formulario />
-        </Modal>
-      </aside>
-      <ul>
-        {itens.map(item => (
-          <li key={item.id}>
-            <Link to={`/movie/${item.id}`}>
-              <h2>{item.title}</h2>
-              <img src={item.image} />
-            </Link>
-          </li>
-        )
-        )}
-      </ul>
+
     </>
   )
 }
