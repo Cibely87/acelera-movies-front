@@ -4,6 +4,8 @@ import { useEffect, useState } from 'react'
 import { client } from '../../service/client'
 import { Formulario } from '../../components/form'
 import { Modal } from '../../components/modal/modal'
+import { Movie } from '../movie/movie'
+import { Rating } from 'react-simple-star-rating'
 
 export const Home = () => {
   const [itens, setItems] = useState([])
@@ -15,6 +17,10 @@ export const Home = () => {
         console.log(response.data)
       })
   }, [])
+
+  const handleStar = (value) => {
+    setItems({ ...Movie, note: value })
+  }
 
   return (
     <>
@@ -34,12 +40,12 @@ export const Home = () => {
                 <h2>{item.title}</h2>
                 <img src={item.image} />
               </Link>
+              <Rating readonly={true} onChange={handleStar} ratingValue={Movie.note} />
             </li>
           )
           )}
         </ul>
       </div>
-
     </>
   )
 }
