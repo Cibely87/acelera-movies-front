@@ -2,7 +2,7 @@ import { useParams } from 'react-router'
 import './movie.css'
 import { Formulario } from '../../components/form'
 import { Modal } from '../../components/modal/modal'
-import { useEffect, useState } from 'react'
+import { useEffect, useState, FontAwesomeIcon } from 'react'
 import { client } from '../../service/client'
 import { Rating } from 'react-simple-star-rating'
 
@@ -32,14 +32,14 @@ export const Movie = () => {
 
   return (
     <div className='pageMovie'>
-      <fontAwesomeIcon icon="Edit">
+      <FontAwesomeIcon icon="Edit">
         <Modal
           label="Edit movie"
           title="Editing">
           <Formulario>
           </Formulario>
         </Modal>
-      </fontAwesomeIcon>
+      </FontAwesomeIcon>
       <h1 className='moviePage'>Movie</h1>
       <h3 className='h3Movie'>You choose the movie: {id}</h3>
       <Rating onClick={handleStar} ratingValue={movie.note} />

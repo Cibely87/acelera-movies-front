@@ -51,7 +51,7 @@ export const Formulario = ({ id }) => {
           <Input onChange={handleChange} name="title" type="text" placeholder="title" label="Title movie" />
           <Input onChange={handleChange} name="subtitle" type="text" placeholder="subtitle" label="Subtitle" />
         </div>
-        <textarea rows="10" cols="62" type="text" placeholder="resume" label="Resume" />
+        <textarea rows="10" cols="58" type="text" placeholder="resume" label="Resume" />
         <div className='titleClass'>
           <Input onChange={handleChange} name="mm/dd/yyyy" type="text" placeholder="mm/dd/yyyy" label="Realese Date" />
           <Input onChange={handleChange} name="image" type="text" placeholder="image" label="Image" />
